@@ -1,6 +1,11 @@
 {
   "name": "koishi-plugin-dify",
   "description": "Integrating Dify.AI in Koishi",
+  "homepage": "https://github.com/saurlax/koishi-plugin-dify",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saurlax/koishi-plugin-dify.git"
+  },
   "version": "0.0.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -13,8 +18,21 @@
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "dify"
   ],
+  "koishi": {
+    "description": {
+      "en": "Integrating Dify.AI in Koishi",
+      "zh": "在 Koishi 中调用 Dify.AI"
+    },
+    "service": {
+      "required": [
+        "http",
+        "database"
+      ]
+    }
+  },
   "devDependencies": {},
   "peerDependencies": {
     "koishi": "^4.17.11"
